@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Tangerine:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  background-image: url(/assets/img/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titulo {
+  margin: 50px auto;
+  font-size: 70px;
+}
+
+form label {
+  display: block;
+  margin: 15px auto;
+  font-size: 36px;
+}
+
+textarea {
+  font-family: "Parisienne", cursive;
+  background-image: url(/assets/img/pergamino.png);
+  background-color: #b8906f;
+  background-size: 475px 342px;
+  background-repeat: no-repeat;
+  border: none;
+  width: 410px;
+  height: 183px;
+  resize: none;
+  padding: 80px 25px;
+  padding-right: 40px;
+  font-size: 15px;
+}
+
+input {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+section button {
+  width: 145px;
+  margin: 16px;
+  font-size: 30px;
+  border: 1px solid #e8d8c7;
+  border-radius: 10px;
+  background-color: #e8d8c7;
+  font-family: "Sacramento", cursive;
+}
+
+section button:hover {
+  background-color: #584534;
+  color: white;
+  border: 1px solid #584534;
+}
+
+.clave {
+  margin: 0 auto;
+  background-color: #f5e1ce;
+  border: 3px solid #584534;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+}
+
+.clave button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.clave input {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-family: "Sacramento", cursive;
+}
+
+textarea#story {
+  -moz-appearance: none;
+  outline: 0px none transparent;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+textarea::placeholder {
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+form div {
+  flex: 50%;
+}

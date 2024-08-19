@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  holaa
+  <header>
+    <h1 class="titulo">Encriptador de mensaje</h1>
+  </header>
+
+  <main>
+    <section>
+      <form>
+        <div>
+          <label for="msj-secreto">Mensaje secreto</label>
+          <textarea id="msj-secreto" placeholder="Ingrese el texto" maxlength="500" minlength="1"></textarea>
+        </div>
+
+        <div>
+          <label for="msj-encriptado">Mensaje encriptado</label>
+          <textarea id="msj-encriptado" placeholder="" maxlength="500" minlength="1"></textarea>
+        </div>
+      </form>
+    </section>
+
+    <label for="clave">Clave</label>
+    <div class="clave">
+      <button class="menos"><span>-</span></button>
+      <input id="clave" type="number">
+      <button class="mas"><span>+</span></button>
+    </div>
+
+    <section>
+      <button id="cifrar">cifrar</button>
+      <button id="descifrar">descifrar</button>
+    </section>
+  </main>
+  <script src="./assets/js/ejem.js"></script>
 </body>
 </html>
