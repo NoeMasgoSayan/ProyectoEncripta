@@ -31,7 +31,6 @@ function cifrar(texto, desplazamiento) {
   let otros = `!¡¿?()=-+`
 
   const caracteres = letras + vocales + numeros + otros;
-  //  Esto es por si la clave es negativa
   //desplazamiento = (desplazamiento % 26 + 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length + caracteres.length) % caracteres.length;
   
@@ -55,7 +54,6 @@ function descifrar (texto, desplazamiento) {
   let otros = `!¡¿?()=-+`
 
   const caracteres = letras + vocales + numeros + otros;
-  //  Esto es por si la clave es negativa
   //desplazamiento = (desplazamiento % 26 - 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length - caracteres.length) % caracteres.length;
   for (let i = 0; i < texto.length; i++) {
@@ -68,6 +66,8 @@ function descifrar (texto, desplazamiento) {
   } 
   return resultado;
 }
+
+// Input number
 
 const inputNumber = document.querySelector(".card input");
 
