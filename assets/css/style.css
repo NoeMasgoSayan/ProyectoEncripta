@@ -80,6 +80,18 @@ section button:hover {
   font-family: "Sacramento", cursive;
 }
 
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none; /* Chrome, Safari */
+  appearance: none; /* Otros navegadores modernos */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #clave-numeros {
   font-size: 40px;
 }

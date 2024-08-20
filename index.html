@@ -11,8 +11,8 @@
     <h1 class="titulo">Encriptador de mensaje</h1>
   </header>
 
-  <main>
-    <section>
+  <main class="card">
+    <section> 
       <form>
         <div class="divIzquierda">
           <label for="msj-secreto">Mensaje secreto</label>
@@ -21,16 +21,16 @@
 
         <div class="divDerecha">
           <label for="msj-encriptado">Mensaje encriptado</label>
-          <textarea id="msj-encriptado" placeholder="" maxlength="500" minlength="1"></textarea>
+          <textarea id="msj-encriptado" maxlength="500" minlength="1" readonly></textarea>
         </div>
       </form>
     </section>
 
     <label for="clave" id="clave-numeros">Clave</label>
     <div class="clave">
-      <button class="menos"><span>-</span></button>
-      <input id="clave" type="number">
-      <button class="mas"><span>+</span></button>
+      <button class="menos" onclick="subtractValue();"><span>-</span></button>
+      <input id="clave" type="number" min="1" max="999" value="100">
+      <button class="mas" onclick="addValue();"><span>+</span></button>
     </div>
 
     <section>

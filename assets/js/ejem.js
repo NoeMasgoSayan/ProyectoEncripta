@@ -3,7 +3,7 @@ window.addEventListener('load', inicio);
 function inicio() {
   // Mensaje secreto
   document.getElementById("msj-secreto").addEventListener("keyup", function() {
-    this.value = this.value.toLowerCase();
+    this.value = this.value.toUpperCase();
   });
   // Botón de cifrar
   document.getElementById("cifrar").addEventListener("click", function() {
@@ -25,8 +25,8 @@ function inicio() {
 
 function cifrar(texto, desplazamiento) {
   let resultado = "";
-  let letras = "abcdefghijklmnopqrstuvwxyzñ";
-  let vocales = "áéíóú" 
+  let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÑ"
+  let vocales = "ÁÉÍÓÚ"
   let numeros = "0123456789";
   let otros = `!¡¿?()=-+`
 
@@ -49,8 +49,8 @@ function cifrar(texto, desplazamiento) {
 function descifrar (texto, desplazamiento) {
 
   let resultado = "";
-  let letras = "abcdefghijklmnopqrstuvwxyzñ";
-  let vocales = "áéíóú" 
+  let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÑ";
+  let vocales = "ÁÉÍÓÚ"; 
   let numeros = "0123456789";
   let otros = `!¡¿?()=-+`
 
@@ -68,3 +68,15 @@ function descifrar (texto, desplazamiento) {
   } 
   return resultado;
 }
+
+const inputNumber = document.querySelector(".card input");
+
+const addValue = () => {
+    inputNumber.value = Number(inputNumber.value) + 1;
+};
+
+const subtractValue = () => {
+    if (inputNumber.value > 0) {
+        inputNumber.value = Number(inputNumber.value) - 1;
+    }
+};
