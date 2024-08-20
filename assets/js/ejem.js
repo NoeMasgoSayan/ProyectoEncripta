@@ -18,6 +18,7 @@ function inicio() {
     let texto = document.getElementById("msj-secreto").value;
     let desplazamiento = document.getElementById("clave").value;
     document.getElementById("msj-encriptado").value = descifrar(texto, desplazamiento);
+    document.getElementById("msj-secreto").value = "";
     //this.hidden = true;
   });
 }
@@ -33,15 +34,13 @@ function cifrar(texto, desplazamiento) {
   //  Esto es por si la clave es negativa
   //desplazamiento = (desplazamiento % 26 + 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length + caracteres.length) % caracteres.length;
-
-  if (texto) {
-    for (let i = 0; i < texto.length; i++) {
-      if (caracteres.indexOf(texto[i]) != -1) {
-        let position = ((caracteres.indexOf(texto[i]) + desplazamiento) % caracteres.length);
-        resultado += caracteres[position];
-      } else {
-        resultado += texto[i];
-      }
+  
+  for (let i = 0; i < texto.length; i++) {
+    if (caracteres.indexOf(texto[i]) != -1) {
+      let position = ((caracteres.indexOf(texto[i]) + desplazamiento) % caracteres.length);
+      resultado += caracteres[position];
+    } else {
+      resultado += texto[i];
     }
   }
   return resultado;
@@ -59,15 +58,12 @@ function descifrar (texto, desplazamiento) {
   //  Esto es por si la clave es negativa
   //desplazamiento = (desplazamiento % 26 - 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length - caracteres.length) % caracteres.length;
-
-  if (texto) {
-    for (let i = 0; i < texto.length; i++) {
-      if (caracteres.indexOf(texto[i]) != -1) {
-        let position = ((caracteres.indexOf(texto[i]) - desplazamiento) % caracteres.length);
-        resultado += caracteres[position];
-      } else {
-        resultado += texto[i];
-      }
+  for (let i = 0; i < texto.length; i++) {
+    if (caracteres.indexOf(texto[i]) != -1) {
+      let position = ((caracteres.indexOf(texto[i]) - desplazamiento) % caracteres.length);
+      resultado += caracteres[position];
+    } else {
+      resultado += texto[i];
     }
   } 
   return resultado;

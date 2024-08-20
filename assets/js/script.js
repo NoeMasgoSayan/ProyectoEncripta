@@ -1,25 +1,3 @@
-/*window.addEventListener('load', inicio, true);
-
-function inicio() {
-  // Mensaje secreto
-  document.getElementById("msj-secreto").addEventListener("keyup", function() {
-    this.value = this.value.toLowerCase();
-  }, true);
-  // Botón de cifrar
-  document.getElementById("cifrar").addEventListener("click", function() {
-    let texto = document.getElementById("msj-secreto").value;
-    let desplazamiento = document.getElementById("clave").value;
-    document.getElementById("msj-encriptado").value = cifrar(texto, desplazamiento);
-  }, true);
-  // Botón de descifrar
-  document.getElementById("descifrar").addEventListener("click", function() {
-    let texto = document.getElementById("msj-secreto").value;
-    let desplazamiento = document.getElementById("clave").value;
-    document.getElementById("msj-encriptado").value = descifrar(texto, desplazamiento);
-  }, true);
-}
-*/
-
 function cifrar(texto, desplazamiento) {
   let resultado = "";
   let letras = "abcdefghijklmnopqrstuvwxyz";

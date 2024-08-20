@@ -14,19 +14,19 @@
   <main>
     <section>
       <form>
-        <div>
+        <div class="divIzquierda">
           <label for="msj-secreto">Mensaje secreto</label>
           <textarea id="msj-secreto" placeholder="Ingrese el texto" maxlength="500" minlength="1"></textarea>
         </div>
 
-        <div>
+        <div class="divDerecha">
           <label for="msj-encriptado">Mensaje encriptado</label>
           <textarea id="msj-encriptado" placeholder="" maxlength="500" minlength="1"></textarea>
         </div>
       </form>
     </section>
 
-    <label for="clave">Clave</label>
+    <label for="clave" id="clave-numeros">Clave</label>
     <div class="clave">
       <button class="menos"><span>-</span></button>
       <input id="clave" type="number">
