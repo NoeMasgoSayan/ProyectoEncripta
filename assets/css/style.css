@@ -3,7 +3,7 @@
 body {
   text-align: center;
   font-family: "Sacramento", cursive;
-  background-image: url(/assets/img/fondo.png);
+  background-image: url("../img/fondo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ form label {
 
 textarea {
   font-family: "Parisienne", cursive;
-  background-image: url(/assets/img/pergamino.png);
+  background-image: url("../img/pergamino.png");
   background-color: #b8906f;
   background-size: 475px 342px;
   background-repeat: no-repeat;
