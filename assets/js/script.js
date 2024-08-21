@@ -31,6 +31,7 @@ function cifrar(texto, desplazamiento) {
   let otros = `!¡¿?()=-+`
 
   const caracteres = letras + vocales + numeros + otros;
+  // Asegura que el desplazamiento esté dentro del rango de los índices de la cadena, siempre positivo
   //desplazamiento = (desplazamiento % 26 + 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length + caracteres.length) % caracteres.length;
   
@@ -54,7 +55,8 @@ function descifrar (texto, desplazamiento) {
   let otros = `!¡¿?()=-+`
 
   const caracteres = letras + vocales + numeros + otros;
-  //desplazamiento = (desplazamiento % 26 - 26) % 26;
+  // Asegura que el desplazamiento esté dentro del rango de los índices de la cadena, siempre positivo
+  // desplazamiento = (desplazamiento % 26 - 26) % 26;
   desplazamiento = (desplazamiento % caracteres.length - caracteres.length) % caracteres.length;
   for (let i = 0; i < texto.length; i++) {
     if (caracteres.indexOf(texto[i]) != -1) {
