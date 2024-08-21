@@ -12,10 +12,12 @@ Este producto tiene un fácil uso y es una herramienta innovadora para las parej
 1. Escribimos el mensaje que queremos encriptar.
 ![mensaje](/assets/img/msj.png)
 2. Ponemos una clave (que solo la persona a la que le quieres hacer llegar el mensaje lo tiene que saber).
+![clave](/assets/img/clave.png)
 3. Hacemos click en cifrar.
 ![resultado](/assets/img/cifrar.png)
 4. Nos aparecerá el mensaje encriptado.
 ![encriptado](/assets/img/resultado.png)
 5. Copiamos el mensaje y lo pegamos.
+![mensaje](/assets/img/msj.png)
 6. Hacemos click en descifrar.
 ![Descifrar](/assets/img/descifrar.png)
